@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lightbox plugin CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bean Boutique</h1>
+                <p>Specialty Coffee Shop</p>
+            </div>
+            
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="coffee.html">Our Coffees</a></li>
+                    <li><a href="equipment.html">Brewing Gear</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Bean Boutique</h2>
+            <p>Discover our handcrafted blends from the world's finest coffee regions</p>
+            <a href="coffee.html" class="btn">Explore Our Coffees</a>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Why Choose Bean Boutique?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Ethically Sourced</h3>
+                    <p>Direct trade with small-scale farmers ensuring fair prices and sustainable practices.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mortar-pestle"></i>
+                    <h3>Small Batch Roasted</h3>
+                    <p>Freshly roasted in-house to bring out the unique character of each bean.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Award Winning</h3>
+                    <p>Recognized for excellence in flavor profiles and brewing techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (using Lightbox plugin) -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Our Coffee Moments</h2>
+            <div class="gallery-grid">
+                <a href="images/coffee1.jpg" data-lightbox="gallery" data-title="Ethiopian Yirgacheffe">
+                    <img src="../img/coffee-brewing.jpg" alt="Coffee brewing">
+                </a>
+                <a href="images/coffee2.jpg" data-lightbox="gallery" data-title="Colombian Supremo">
+                    <img src="../img/coffee-beans.jpg" alt="Coffee beans">
+                </a>
+                <a href="images/coffee3.jpg" data-lightbox="gallery" data-title="Latte Art">
+                    <img src="../img/latte-art.jpg" alt="Latte art">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Coffee Journey</h2>
+            <p>Subscribe to receive updates on new arrivals, events, and exclusive offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bean Boutique</h3>
+                    <p>Artisan coffee boutique dedicated to bringing you the finest coffee experiences since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="coffee.html">Our Coffees</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Lane, Brew City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@beanboutique.com</p>
+                </div>
+                
+            <div class="footer-map">
+                <p>Find us at</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19024.775399338883!2d-2.2530317504140798!3d53.41309270733599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb25e64b5ca75%3A0x6fdb3fb871f94cf1!2sDidsbury%2C%20Manchester%2C%20UK!5e0!3m2!1sen!2sbd!4v1752756596480!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Mobile menu functionality -->
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

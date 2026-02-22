@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Coffee Selection | Bean Boutique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lightbox plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Animate.css for text animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header (same as home page) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bean Boutique</h1>
+                <p>Your one-stop shop for the finest coffee beans</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html" class="active">Our Coffees</a></li>
+                    <li><a href="equipment.html">Brewing Gear</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Coffee Hero Section -->
+    <section class="coffee-hero">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInDown">Our Coffee Selection</h2>
+            <p class="animate__animated animate__fadeInUp">Discover our premium single-origin and specialty blends</p>
+        </div>
+    </section>
+
+    <!-- Animated Search Bar -->
+    <section class="search-section">
+        <h2 class="animate__animated animate__fadeInDown">Find Your Perfect Coffee</h2>
+        <div class="container">
+            <div class="search-container animate__animated animate__zoomIn">
+                <input type="text" id="coffee-search" placeholder="Search our coffees..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Coffees</button>
+                <button class="filter-btn" data-filter="single-origin">Single Origin</button>
+                <button class="filter-btn" data-filter="blend">Blends</button>
+                <button class="filter-btn" data-filter="espresso">Espresso</button>
+                <button class="filter-btn" data-filter="decaf">Decaf</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Products Grid -->
+    <section class="coffee-products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="single-origin" data-search="ethiopian yirgacheffe floral citrus">
+                    <div class="product-img">
+                        <a href="images/ethiopian.jpg" data-lightbox="coffee" data-title="Ethiopian Yirgacheffe">
+                            <img src="../img/ethiopian-yirgacheffe.jpg" alt="Ethiopian Yirgacheffe">
+                        </a>
+                        <span class="origin-tag">Ethiopia</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ethiopian Yirgacheffe</h3>
+                        <p class="flavor-profile">Floral, Citrus, Tea-like</p>
+                        <div class="roast-level">
+                            <span class="light active"></span>
+                            <span class="medium"></span>
+                            <span class="dark"></span>
+                            <span>Light Roast</span>
+                        </div>
+                        <p class="price">$18.99 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="blend espresso" data-search="dark night blend chocolate caramel espresso">
+                    <div class="product-img">
+                        <a href="images/dark-blend.jpg" data-lightbox="coffee" data-title="Dark Night Blend">
+                            <img src="../img/Dark-Night-Blend.jpg" alt="Dark Night Blend">
+                        </a>
+                        <span class="blend-tag">Blend</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dark Night Blend</h3>
+                        <p class="flavor-profile">Chocolate, Caramel, Nutty</p>
+                        <div class="roast-level">
+                            <span class="light"></span>
+                            <span class="medium"></span>
+                            <span class="dark active"></span>
+                            <span>Dark Roast</span>
+                        </div>
+                        <p class="price">$16.99 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="single-origin" data-search="colombian supremo balanced nutty">
+                    <div class="product-img">
+                        <a href="images/colombian.jpg" data-lightbox="coffee" data-title="Colombian Supremo">
+                            <img src="../img/Colombian-Supremo.jpg" alt="Colombian Supremo">
+                        </a>
+                        <span class="origin-tag">Colombia</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Colombian Supremo</h3>
+                        <p class="flavor-profile">Balanced, Nutty, Caramel</p>
+                        <div class="roast-level">
+                            <span class="light"></span>
+                            <span class="medium active"></span>
+                            <span class="dark"></span>
+                            <span>Medium Roast</span>
+                        </div>
+                        <p class="price">$17.50 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="blend" data-search="breakfast blend bright lively">
+                    <div class="product-img">
+                        <a href="images/breakfast-blend.jpg" data-lightbox="coffee" data-title="Breakfast Blend">
+                            <img src="../img/Breakfast-blend.jpg" alt="Breakfast Blend">
+                        </a>
+                        <span class="blend-tag">Blend</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Breakfast Blend</h3>
+                        <p class="flavor-profile">Bright, Lively, Citrus</p>
+                        <div class="roast-level">
+                            <span class="light active"></span>
+                            <span class="medium"></span>
+                            <span class="dark"></span>
+                            <span>Light Roast</span>
+                        </div>
+                        <p class="price">$15.99 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="single-origin espresso" data-search="brazil santos chocolate almond">
+                    <div class="product-img">
+                        <a href="images/brazilian.jpg" data-lightbox="coffee" data-title="Brazil Santos">
+                            <img src="../img/Brazil-santos.jpg" alt="Brazil Santos">
+                        </a>
+                        <span class="origin-tag">Brazil</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brazil Santos</h3>
+                        <p class="flavor-profile">Chocolate, Almond, Smooth</p>
+                        <div class="roast-level">
+                            <span class="light"></span>
+                            <span class="medium active"></span>
+                            <span class="dark"></span>
+                            <span>Medium Roast</span>
+                        </div>
+                        <p class="price">$16.75 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="decaf" data-search="decaf colombian smooth mild">
+                    <div class="product-img">
+                        <a href="images/decaf.jpg" data-lightbox="coffee" data-title="Decaf Colombian">
+                            <img src="../img/Decaf-colombian.jpg" alt="Decaf Colombian">
+                        </a>
+                        <span class="decaf-tag">Decaf</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Decaf Colombian</h3>
+                        <p class="flavor-profile">Smooth, Mild, Nutty</p>
+                        <div class="roast-level">
+                            <span class="light"></span>
+                            <span class="medium active"></span>
+                            <span class="dark"></span>
+                            <span>Medium Roast</span>
+                        </div>
+                        <p class="price">$18.25 <span>/ 12oz</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brew Guide CTA -->
+    <section class="brew-guide">
+        <div class="container">
+            <div class="guide-content">
+                <h2>Not sure which coffee to choose?</h2>
+                <p>Try our interactive brew guide to find your perfect match based on your taste preferences and brewing method.</p>
+                <a href="#" class="btn">Explore Brew Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer class="footer">
+        <!-- Same footer content as home page -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
+
+        // Filter functionality
+        $(document).ready(function(){
+            $('.filter-btn').click(function(){
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                const filter = $(this).data('filter');
+                if(filter == 'all') {
+                    $('.product-card').show();
+                } else {
+                    $('.product-card').hide();
+                    $(`.product-card[data-category*="${filter}"]`).show();
+                }
+            });
+
+            // Animated search functionality
+            $('#coffee-search').on('input', function(){
+                const searchTerm = $(this).val().toLowerCase();
+                $('.product-card').each(function(){
+                    const searchData = $(this).data('search').toLowerCase();
+                    if(searchData.includes(searchTerm)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+
+            // Add to cart animation
+            $('.add-to-cart').click(function(){
+                $(this).html('<i class="fas fa-check"></i> Added');
+                $(this).css('background', 'var(--accent-color)');
+                setTimeout(() => {
+                    $(this).html('Add to Cart');
+                    $(this).css('background', 'var(--primary-color)');
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

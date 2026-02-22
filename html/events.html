@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Workshops | Bean Boutique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Calendar plugin CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css">
+
+</head>
+<body>
+    <!-- Header (same as home page) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Brew Haven</h1>
+                <p>Artisan Coffee Boutique</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Our Coffees</a></li>
+                    <li><a href="equipment.html">Brewing Gear</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Events Hero Section -->
+    <section class="events-hero">
+        <div class="container">
+            <h2>Events & Workshops</h2>
+            <p>Join our coffee community and expand your brewing knowledge</p>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/latte-art.jpg" alt="Latte Art Workshop">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JUN</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Latte Art Masterclass</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 10:00 AM - 12:30 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Cafe</span>
+                        </div>
+                        <p>Learn the secrets of perfect milk steaming and pouring techniques to create beautiful latte art from our champion barista.</p>
+                        <div class="event-footer">
+                            <span class="price">$45 per person</span>
+                            <button class="register-btn" data-event="latte-art">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/Pour-over-perfection.jpg" alt="Pour Over Workshop">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">JUN</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Pour Over Perfection</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 2:00 PM - 4:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Lab</span>
+                        </div>
+                        <p>Discover how to brew the perfect pour-over coffee with precise water temperature, grind size, and pouring techniques.</p>
+                        <div class="event-footer">
+                            <span class="price">$35 per person</span>
+                            <button class="register-btn" data-event="pour-over">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/Coffee-cupping-session.jpg" alt="Coffee Cupping Session">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">JUN</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Coffee Cupping Session</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 6:00 PM - 8:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Roastery</span>
+                        </div>
+                        <p>Experience professional coffee tasting techniques and learn how to identify flavor notes like a certified Q Grader.</p>
+                        <div class="event-footer">
+                            <span class="price">$40 per person</span>
+                            <button class="register-btn" data-event="cupping">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/Home-brewing-essentials.jpg" alt="Home Brewing Workshop">
+                        <div class="event-date">
+                            <span class="day">06</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Home Brewing Essentials</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 11:00 AM - 1:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Cafe</span>
+                        </div>
+                        <p>Master various home brewing methods including French Press, AeroPress, and Moka Pot with our expert brewers.</p>
+                        <div class="event-footer">
+                            <span class="price">$30 per person</span>
+                            <button class="register-btn" data-event="home-brewing">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/Espresso-basics.jpg" alt="Espresso Basics">
+                        <div class="event-date">
+                            <span class="day">13</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Espresso Basics</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 3:00 PM - 5:30 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Lab</span>
+                        </div>
+                        <p>Learn the fundamentals of espresso preparation, from grind size to extraction time, and how to make basic espresso drinks.</p>
+                        <div class="event-footer">
+                            <span class="price">$50 per person</span>
+                            <button class="register-btn" data-event="espresso">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="../img/Cold-brew-iced-coffee.jpg" alt="Cold Brew Workshop">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">JUL</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Cold Brew & Iced Coffee</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 1:00 PM - 3:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brew Haven Roastery</span>
+                        </div>
+                        <p>Discover different methods for making cold brew and iced coffee at home, plus creative recipes for summer drinks.</p>
+                        <div class="event-footer">
+                            <span class="price">$35 per person</span>
+                            <button class="register-btn" data-event="cold-brew">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div class="registration-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Event Registration</h2>
+            <p class="event-title">Latte Art Masterclass</p>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="attendees">Number of Attendees</label>
+                    <select id="attendees" name="attendees">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Event Date</label>
+                    <input type="text" id="event-date" name="event-date" class="datepicker" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Past Events Section -->
+    <section class="past-events">
+        <div class="container">
+            <h2>Past Events Gallery</h2>
+            <div class="event-gallery">
+                <div class="gallery-item">
+                    <img src="../img/Coffee-roasting-workshop.jpg" alt="Coffee Roasting Workshop">
+                    <div class="gallery-caption">Coffee Roasting Workshop</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/Barista-training.jpg" alt="Barista Training">
+                    <div class="gallery-caption">Barista Training</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/Farmers-meetup.jpg" alt="Farmers Meetup">
+                    <div class="gallery-caption">Coffee Farmers Meetup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/Brewing-competition.jpg" alt="Brewing Competition">
+                    <div class="gallery-caption">Annual Brewing Competition</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="events-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated on Future Events</h2>
+                <p>Subscribe to our events newsletter to be the first to know about new workshops and special events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer class="footer">
+        <!-- Same footer content as home page -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
+
+        // Initialize datepicker
+        $(document).ready(function(){
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                autoclose: true
+            });
+
+            // Registration modal functionality
+            const modal = document.querySelector('.registration-modal');
+            const registerBtns = document.querySelectorAll('.register-btn');
+            const closeModal = document.querySelector('.close-modal');
+            const eventTitle = document.querySelector('.event-title');
+            const eventDate = document.querySelector('#event-date');
+
+            registerBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const eventName = this.getAttribute('data-event');
+                    let title = '';
+                    let date = '';
+                    
+                    // Set modal content based on which event was clicked
+                    switch(eventName) {
+                        case 'latte-art':
+                            title = 'Latte Art Masterclass';
+                            date = '15/06/2023';
+                            break;
+                        case 'pour-over':
+                            title = 'Pour Over Perfection';
+                            date = '22/06/2023';
+                            break;
+                        case 'cupping':
+                            title = 'Coffee Cupping Session';
+                            date = '29/06/2023';
+                            break;
+                        case 'home-brewing':
+                            title = 'Home Brewing Essentials';
+                            date = '06/07/2023';
+                            break;
+                        case 'espresso':
+                            title = 'Espresso Basics';
+                            date = '13/07/2023';
+                            break;
+                        case 'cold-brew':
+                            title = 'Cold Brew & Iced Coffee';
+                            date = '20/07/2023';
+                            break;
+                    }
+                    
+                    eventTitle.textContent = title;
+                    eventDate.value = date;
+                    modal.style.display = 'block';
+                });
+            });
+
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            // Form submission
+            $('#registration-form').submit(function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const firstName = $('#first-name').val();
+                const lastName = $('#last-name').val();
+                const email = $('#email').val();
+                const event = $('.event-title').text();
+                const date = $('#event-date').val();
+                
+                // Here you would typically send this data to your server
+                // For demonstration, we'll just show an alert
+                alert(`Thank you, ${firstName} ${lastName}! Your registration for ${event} on ${date} has been received. A confirmation has been sent to ${email}.`);
+                
+                // Reset form and close modal
+                this.reset();
+                modal.style.display = 'none';
+            });
+
+            // Newsletter form submission
+            $('.newsletter-form').submit(function(e) {
+                e.preventDefault();
+                const email = $(this).find('input[type="email"]').val();
+                alert(`Thank you for subscribing with ${email}! You'll receive our next events newsletter.`);
+                $(this).find('input[type="email"]').val('');
+            });
+        });
+    </script>
+</body>
+</html>

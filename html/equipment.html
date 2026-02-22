@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equipment | Brew Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Slick Carousel plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+</head>
+<body>
+    <!-- Header (same as home page) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bean Boutique</h1>
+                <p>Your one-stop shop for all things coffee</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Our Coffees</a></li>
+                    <li><a href="equipment.html" class="active">Brewing Gear</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Equipment Hero Section -->
+    <section class="equipment-hero">
+        <div class="container">
+            <h2>Brewing Equipment</h2>
+            <p>Professional tools for the perfect cup at home</p>
+        </div>
+    </section>
+
+    <!-- Brewing Methods Navigation -->
+    <section class="brew-methods">
+        <h2 class="animate__animated animate__fadeInDown">Explore Brewing Methods</h2>
+        <div class="container">
+            <div class="method-tabs">
+                <button class="method-tab active" data-method="all">All Equipment</button>
+                <button class="method-tab" data-method="pour-over">Pour Over</button>
+                <button class="method-tab" data-method="french-press">French Press</button>
+                <button class="method-tab" data-method="espresso">Espresso</button>
+                <button class="method-tab" data-method="aeropress">AeroPress</button>
+                <button class="method-tab" data-method="cold-brew">Cold Brew</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Equipment Carousel -->
+    <section class="featured-equipment">
+        <div class="container">
+            <h2>Featured Brewing Tools</h2>
+            <div class="equipment-carousel">
+                <!-- Item 1 -->
+                <div class="carousel-item">
+                    <img src="../img/chemex.jpg" alt="Chemex">
+                    <div class="carousel-caption">
+                        <h3>Chemex Classic</h3>
+                        <p>The iconic pour-over brewer</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="carousel-item">
+                    <img src="../img/barista-kit.jpg" alt="Barista Kit">
+                    <div class="carousel-caption">
+                        <h3>Barista Starter Kit</h3>
+                        <p>Everything you need to begin</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="carousel-item">
+                    <img src="../img/coffe-scale.jpg" alt="Coffee Scale">
+                    <div class="carousel-caption">
+                        <h3>Precision Scale</h3>
+                        <p>Measure with 0.1g accuracy</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="carousel-item">
+                    <img src="../img/Coffee-grinder.jpg" alt="Coffee Grinder">
+                    <div class="carousel-caption">
+                        <h3>Burr Grinder</h3>
+                        <p>Consistent grind for any method</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Catalog -->
+    <section class="equipment-catalog">
+        <div class="container">
+            <div class="catalog-header">
+                <h2>Our Brewing Collection</h2>
+                <div class="sort-options">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="equipment-grid">
+                <!-- Product 1 -->
+                <div class="equipment-card" data-method="pour-over">
+                    <div class="equipment-img">
+                        <img src="../img/hario-V60-starter-kit.jpg" alt="Hario V60">
+                        <span class="best-seller">BEST SELLER</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Hario V60 Starter Kit</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p class="price">$29.99</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>The Hario V60 is one of the most popular pour-over methods, known for producing clean, flavorful coffee with bright acidity.</p>
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li>V60 Dripper (Size 02)</li>
+                            <li>100 paper filters</li>
+                            <li>Glass carafe</li>
+                            <li>Brewing guide</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="equipment-card" data-method="french-press">
+                    <div class="equipment-img">
+                        <img src="../img/classic-french-press.jpg" alt="French Press">
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Classic French Press</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(36)</span>
+                        </div>
+                        <p class="price">$34.95</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>The French press is a full-immersion brewing method that produces a rich, full-bodied cup with more oils and sediment than other methods.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>34oz capacity (1 liter)</li>
+                            <li>Stainless steel frame</li>
+                            <li>Double-walled glass beaker</li>
+                            <li>3-stage stainless steel filter</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="equipment-card" data-method="aeropress">
+                    <div class="equipment-img">
+                        <img src="../img/aeropress-go.jpg" alt="AeroPress">
+                        <span class="new-arrival">NEW</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3>AeroPress Go</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(58)</span>
+                        </div>
+                        <p class="price">$39.95</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>The AeroPress Go is the portable version of the popular AeroPress, perfect for travel while still making great coffee anywhere.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>Compact, all-in-one design</li>
+                            <li>Includes 350 paper filters</li>
+                            <li>Makes 1-3 cups per press</li>
+                            <li>BPA-free plastic construction</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="equipment-card" data-method="espresso">
+                    <div class="equipment-img">
+                        <img src="../img/Stovetop-espresso-maker.jpg" alt="Moka Pot">
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Stovetop Espresso Maker</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(27)</span>
+                        </div>
+                        <p class="price">$49.99</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>This classic stovetop espresso maker produces strong, rich coffee similar to espresso without needing expensive machines.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>6-cup capacity (300ml)</li>
+                            <li>High-quality aluminum construction</li>
+                            <li>Safety valve for pressure regulation</li>
+                            <li>Works on all stovetops (except induction)</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="equipment-card" data-method="cold-brew">
+                    <div class="equipment-img">
+                        <img src="../img/Cold-Brew-maker.jpg" alt="Cold Brew Maker">
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Cold Brew Maker</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(19)</span>
+                        </div>
+                        <p class="price">$42.50</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>Our cold brew maker produces smooth, low-acid coffee concentrate perfect for iced coffee drinks.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>1.5 liter capacity</li>
+                            <li>Includes stainless steel filter</li>
+                            <li>Easy-pour spout</li>
+                            <li>Dishwasher safe</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="equipment-card" data-method="pour-over">
+                    <div class="equipment-img">
+                        <img src="../img/Gooseneck-kettle.jpg" alt="Gooseneck Kettle">
+                    </div>
+                    <div class="equipment-info">
+                        <h3>Gooseneck Kettle</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(64)</span>
+                        </div>
+                        <p class="price">$59.95</p>
+                        <button class="details-btn">View Details</button>
+                    </div>
+                    <div class="equipment-details">
+                        <h4>About This Product</h4>
+                        <p>Essential for precision pour-over brewing, this gooseneck kettle gives you complete control over water flow.</p>
+                        <h4>Features</h4>
+                        <ul>
+                            <li>1.0 liter capacity</li>
+                            <li>Built-in thermometer</li>
+                            <li>Ergonomic handle</li>
+                            <li>Stainless steel construction</li>
+                        </ul>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brewing Guide Section -->
+    <section class="brewing-guide">
+        <div class="container">
+            <h2>Brewing Method Guides</h2>
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <img src="../img/Pour-over-masterclass.jpg" alt="Pour Over Guide">
+                    <div class="guide-content">
+                        <h3>Pour Over Masterclass</h3>
+                        <p>Learn the techniques to perfect your pour-over coffee, from bloom to drawdown.</p>
+                        <a href="#" class="guide-btn">Read Guide</a>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <img src="../img/Espresso-at-home.jpg" alt="Espresso Guide">
+                    <div class="guide-content">
+                        <h3>Espresso at Home</h3>
+                        <p>Everything you need to know to pull great shots without a professional machine.</p>
+                        <a href="#" class="guide-btn">Read Guide</a>
+                    </div>
+                </div>
+                <div class="guide-card">
+                    <img src="../img/Cold-brew-basics.jpg" alt="Cold Brew Guide">
+                    <div class="guide-content">
+                        <h3>Cold Brew Basics</h3>
+                        <p>Simple methods for making smooth cold brew concentrate at home.</p>
+                        <a href="#" class="guide-btn">Read Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as home page) -->
+    <footer class="footer">
+        <!-- Same footer content as home page -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
+
+        // Equipment carousel
+        $(document).ready(function(){
+            $('.equipment-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            // Filter equipment by method
+            $('.method-tab').click(function(){
+                $('.method-tab').removeClass('active');
+                $(this).addClass('active');
+                
+                const method = $(this).data('method');
+                if(method == 'all') {
+                    $('.equipment-card').show();
+                } else {
+                    $('.equipment-card').hide();
+                    $(`.equipment-card[data-method="${method}"]`).show();
+                }
+            });
+
+            // Show/hide product details
+            $('.details-btn').click(function(){
+                $(this).closest('.equipment-card').find('.equipment-details').slideToggle();
+                $(this).text(function(i, text){
+                    return text === "View Details" ? "Hide Details" : "View Details";
+                });
+            });
+
+            // Add to cart animation
+            $('.add-to-cart').click(function(){
+                $(this).html('<i class="fas fa-check"></i> Added');
+                $(this).css('background', 'var(--accent-color)');
+                setTimeout(() => {
+                    $(this).html('Add to Cart');
+                    $(this).css('background', 'var(--primary-color)');
+                }, 1500);
+            });
+
+            // Sort functionality
+            $('#sort').change(function(){
+                const sortValue = $(this).val();
+                const $grid = $('.equipment-grid');
+                const $items = $('.equipment-card');
+                
+                $items.sort(function(a, b){
+                    if(sortValue == 'price-low'){
+                        return parseFloat($(a).find('.price').text().replace('$','')) - parseFloat($(b).find('.price').text().replace('$',''));
+                    } else if(sortValue == 'price-high'){
+                        return parseFloat($(b).find('.price').text().replace('$','')) - parseFloat($(a).find('.price').text().replace('$',''));
+                    } else if(sortValue == 'name'){
+                        return $(a).find('h3').text() > $(b).find('h3').text() ? 1 : -1;
+                    } else {
+                        return 0; // Default/featured order
+                    }
+                }).appendTo($grid);
+            });
+        });
+    </script>
+</body>
+</html>

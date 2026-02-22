@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers & Subscriptions | Brew Haven</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Countdown Timer Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.2.0/jquery.countdown.min.css">
+</head>
+<body>
+    <!-- Header (same as home page) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Brew Haven</h1>
+                <p>Artisan Coffee Boutique</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Our Coffees</a></li>
+                    <li><a href="equipment.html">Brewing Gear</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="offers.html" class="active">Special Offers</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offers Hero Section -->
+    <section class="offers-hero">
+        <div class="container">
+            <h2>Special Offers & Subscriptions</h2>
+            <p>Enjoy great savings and never run out of your favorite coffee</p>
+        </div>
+    </section>
+
+    <!-- Limited Time Offers -->
+    <section class="limited-offers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Limited Time Offers</h2>
+                <div class="countdown-timer">
+                    <span>Ends in:</span>
+                    <div id="offer-countdown"></div>
+                </div>
+            </div>
+            
+            <div class="offers-grid">
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-badge">Weekend Special</div>
+                    <div class="offer-img">
+                        <img src="../img/Weekend-coffee-bundle.jpg" alt="Weekend Special">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Weekend Coffee Bundle</h3>
+                        <p class="offer-description">Get our best-selling Ethiopian Yirgacheffe and Colombian Supremo together at a special price.</p>
+                        <div class="price-container">
+                            <span class="original-price">$38.98</span>
+                            <span class="discounted-price">$32.99</span>
+                            <span class="discount-percent">15% OFF</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-badge">Brewing Kit</div>
+                    <div class="offer-img">
+                        <img src="../img/Starter-brewing-kit.jpg" alt="Brewing Kit">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Starter Brewing Kit</h3>
+                        <p class="offer-description">Everything you need to start your coffee journey: V60 dripper, filters, and 12oz of our Breakfast Blend.</p>
+                        <div class="price-container">
+                            <span class="original-price">$54.95</span>
+                            <span class="discounted-price">$44.99</span>
+                            <span class="discount-percent">18% OFF</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-badge">Flash Sale</div>
+                    <div class="offer-img">
+                        <img src="../img/Cold-Brew-duo-pack.jpg" alt="Cold Brew Offer">
+                    </div>
+                    <div class="offer-content">
+                        <h3>Cold Brew Duo Pack</h3>
+                        <p class="offer-description">Two bags of our special cold brew blend, perfect for summer iced coffee.</p>
+                        <div class="price-container">
+                            <span class="original-price">$35.98</span>
+                            <span class="discounted-price">$28.50</span>
+                            <span class="discount-percent">21% OFF</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Plans -->
+    <section class="subscription-plans">
+        <div class="container">
+            <h2>Coffee Subscription Plans</h2>
+            <p class="section-subtitle">Never run out of your favorite coffee with our flexible subscription options</p>
+            
+            <div class="plans-grid">
+                <!-- Plan 1 -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Casual Sip</h3>
+                        <p class="plan-price">$15<span>/month</span></p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 bag (12oz) per month</li>
+                            <li><i class="fas fa-check"></i> Free shipping</li>
+                            <li><i class="fas fa-check"></i> 5% discount on all orders</li>
+                            <li><i class="fas fa-check"></i> Flexible cancellation</li>
+                            <li><i class="fas fa-times"></i> Exclusive offers</li>
+                        </ul>
+                    </div>
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+
+                <!-- Plan 2 (Featured) -->
+                <div class="plan-card featured">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>Coffee Enthusiast</h3>
+                        <p class="plan-price">$28<span>/month</span></p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 2 bags (12oz) per month</li>
+                            <li><i class="fas fa-check"></i> Free shipping</li>
+                            <li><i class="fas fa-check"></i> 10% discount on all orders</li>
+                            <li><i class="fas fa-check"></i> Exclusive seasonal blends</li>
+                            <li><i class="fas fa-check"></i> Free brewing guide</li>
+                        </ul>
+                    </div>
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Coffee Connoisseur</h3>
+                        <p class="plan-price">$50<span>/month</span></p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 4 bags (12oz) per month</li>
+                            <li><i class="fas fa-check"></i> Free shipping</li>
+                            <li><i class="fas fa-check"></i> 15% discount on all orders</li>
+                            <li><i class="fas fa-check"></i> Exclusive limited editions</li>
+                            <li><i class="fas fa-check"></i> Free monthly tasting kit</li>
+                        </ul>
+                    </div>
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Benefits -->
+    <section class="subscription-benefits">
+        <div class="container">
+            <h2>Why Subscribe?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Freshness Guaranteed</h3>
+                    <p>Receive coffee roasted just before shipping for maximum freshness and flavor.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Exclusive Discounts</h3>
+                    <p>Subscribers get special discounts on all purchases, not just subscription items.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Member Perks</h3>
+                    <p>Access to limited edition blends and early releases before the general public.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Change your delivery frequency or pause anytime with no cancellation fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Customization -->
+    <section class="subscription-custom">
+        <div class="container">
+            <div class="custom-content">
+                <div class="custom-text">
+                    <h2>Customize Your Subscription</h2>
+                    <p>Tell us your preferences and we'll tailor your subscription to match your taste. Change your selections anytime through your account.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Choose your favorite coffee or let us surprise you</li>
+                        <li><i class="fas fa-check"></i> Select your preferred roast level</li>
+                        <li><i class="fas fa-check"></i> Adjust delivery frequency (weekly, bi-weekly, monthly)</li>
+                        <li><i class="fas fa-check"></i> Add brewing equipment or accessories</li>
+                    </ul>
+                    <button class="customize-btn">Start Customizing</button>
+                </div>
+                <div class="custom-image">
+                    <img src="../img/custom-subscription.png" alt="Custom Subscription">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Modal -->
+    <div class="subscription-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Start Your Subscription</h2>
+            <form id="subscription-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="sub-first-name">First Name</label>
+                        <input type="text" id="sub-first-name" name="sub-first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sub-last-name">Last Name</label>
+                        <input type="text" id="sub-last-name" name="sub-last-name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sub-email">Email Address</label>
+                    <input type="email" id="sub-email" name="sub-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="sub-plan">Subscription Plan</label>
+                    <select id="sub-plan" name="sub-plan" required>
+                        <option value="">Select a plan</option>
+                        <option value="casual">Casual Sip ($15/month)</option>
+                        <option value="enthusiast">Coffee Enthusiast ($28/month)</option>
+                        <option value="connoisseur">Coffee Connoisseur ($50/month)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sub-frequency">Delivery Frequency</label>
+                    <select id="sub-frequency" name="sub-frequency" required>
+                        <option value="" disabled selected>select frequency</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="bi-weekly">Bi-Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sub-coffee">Coffee Preference</label>
+                    <select id="sub-coffee" name="sub-coffee">
+                        <option value="surprise">Surprise Me (Recommended)</option>
+                        <option value="light">Light Roasts</option>
+                        <option value="medium">Medium Roasts</option>
+                        <option value="dark">Dark Roasts</option>
+                        <option value="specific">I'll choose specific coffees</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="sub-agree" required> I agree to the <a href="#">Terms of Service</a> and <a href="#">Subscription Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Complete Subscription</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (same as home page) -->
+    <footer class="footer">
+        <!-- Same footer content as home page -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar ul').classList.toggle('active');
+        });
+
+        // Countdown timer for offers
+        $(document).ready(function(){
+            $('#offer-countdown').countdown('2023/07/31', function(event) {
+                $(this).html(event.strftime(
+                    '<span>%D</span>d <span>%H</span>h <span>%M</span>m <span>%S</span>s'
+                ));
+            });
+
+            // Subscription modal functionality
+            const subModal = document.querySelector('.subscription-modal');
+            const subBtns = document.querySelectorAll('.subscribe-btn, .customize-btn');
+            const closeSubModal = document.querySelector('.subscription-modal .close-modal');
+
+            subBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    subModal.style.display = 'block';
+                });
+            });
+
+            closeSubModal.addEventListener('click', function() {
+                subModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(e) {
+                if (e.target == subModal) {
+                    subModal.style.display = 'none';
+                }
+            });
+
+            // Form submission
+            $('#subscription-form').submit(function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const firstName = $('#sub-first-name').val();
+                const plan = $('#sub-plan option:selected').text();
+                
+                // Here you would typically send this data to your server
+                // For demonstration, we'll just show an alert
+                alert(`Thank you, ${firstName}! Your ${plan} subscription has been created. Welcome to Brew Haven!`);
+                
+                // Reset form and close modal
+                this.reset();
+                subModal.style.display = 'none';
+            });
+
+            // Add to cart animation for offers
+            $('.add-to-cart').click(function(){
+                $(this).html('<i class="fas fa-check"></i> Added');
+                $(this).css('background', 'var(--accent-color)');
+                setTimeout(() => {
+                    $(this).html('Add to Cart');
+                    $(this).css('background', 'var(--primary-color)');
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
